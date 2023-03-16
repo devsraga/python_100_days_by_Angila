@@ -1,0 +1,29 @@
+------------------------
+1. Short cuts for pycharm
+------------------------
+ctrl D -  duplicate the line
+ctrl
+
+
+
+------------------------
+2. Basic Commands
+------------------------
+list.append(element)     will add this element in the list
+list = list_1 + list_2   combine both lists
+string.split()           split elements and make list separated by space
+string.split(",")        split elements and make list separated by coma
+val = len()              calculate length of list or string or object
+
+
+
+------------------------
+3. Random Number
+------------------------
+import random as rand
+rand.randint(a,b)   including a and b choose one number from a to b
+rand.choice(list)   choose from a given list
+random.random()     generate between 0 and 1 but not including 0 and 1
+random.uniform(a,b)    generate float number between two given numbers, a and may be float also
+random.shuffle(list)   it shuffle a list with out changing the element only change sequence
+
