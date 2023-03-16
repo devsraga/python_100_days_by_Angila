@@ -27,3 +27,18 @@ random.random()     generate between 0 and 1 but not including 0 and 1
 random.uniform(a,b)    generate float number between two given numbers, a and may be float also
 random.shuffle(list)   it shuffle a list with out changing the element only change sequence
 
+
+
+------------------------
+4. Turtle module
+------------------------
+turtle is module
+class: Turtle, Screen
+
+
+
+------------------------
+5. tkinter module
+------------------------
+it is module to make GUI
+
