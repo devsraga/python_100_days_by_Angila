@@ -9,6 +9,7 @@ def main():
     # turtle parameters
     timy_the_turtle.shape("turtle")
     timy_the_turtle.color("red")
+    timy_the_turtle.colormode(255)
 
     # drawing cw_squire by timy
     draw_squire_cw(timy_the_turtle)
@@ -96,6 +97,9 @@ def rand_color():
     colour_list = ["red", "green", "blue", "black", "orange red", "yellow", "pink", "orange red"]
     random_color = random.choice(colour_list)
     return random_color
+
+def rand_color_all():
+
 
 if __name__ == "__main__":
     main()
