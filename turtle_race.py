@@ -9,20 +9,7 @@ def main():
     choice_to_play = True
     while choice_to_play:
         umpaier = Turtle()
-        umpaier.shape("turtle")
-        umpaier.penup()
-        umpaier.pensize(10)
-        colormode(255)
-        umpaier.color((128, 0, 0))
-        umpaier.goto(0, 230)
-        umpaier.rt(90)
-        time.sleep(1)
-        umpaier.home()
-        umpaier.write("I am your 'UMPAIER' for 'TURTLE RACE'", True, align="center", font=('Arial', 15, 'normal'))
-        umpaier.goto(0, 230)
-        umpaier.rt(90)
-        time.sleep(2)
-        umpaier.clear()
+        umpaier_settings(umpaier)
         choice = screen.textinput("Choice to play", "Do you want to play 'y', or 'n': ")
         choice = choice.lower()
         if choice == "y":
@@ -38,10 +25,39 @@ def main():
             screen.clear()
         else:
             choice_to_play = False
+            bye_msg(umpaier)
             umpaier.bye()
 
-
     screen.exitonclick()
+
+
+# umpaier settings
+def umpaier_settings(umpaier):
+    umpaier.shape("turtle")
+    umpaier.penup()
+    umpaier.pensize(10)
+    colormode(255)
+    umpaier.color((128, 0, 0))
+    umpaier.goto(0, 230)
+    umpaier.rt(90)
+    time.sleep(1)
+    umpaier.home()
+    umpaier.write("I am your 'UMPAIER' for 'TURTLE RACE'", True, align="center", font=('Arial', 15, 'normal'))
+    umpaier.goto(0, 230)
+    umpaier.rt(90)
+    time.sleep(2)
+    umpaier.clear()
+
+
+# bye msg
+def bye_msg(umpaier):
+    umpaier.home()
+    umpaier.write("Bye Bye", True, align="center", font=('Arial', 30, 'normal'))
+    umpaier.goto(0, 230)
+    umpaier.rt(90)
+    time.sleep(1)
+    umpaier.clear()
+    umpaier.bye()
 
 
 def turtles_for_race(turtles, colour_list, y_cor):
@@ -61,7 +77,6 @@ def turtles_on_pos(turtles, y_cor):
         turtles[i].goto(-240, y_cor[i])
 
 
-
 # race
 def race(turtles):
     is_racing = True
@@ -69,14 +84,14 @@ def race(turtles):
         for i in range(5):
             turtle = turtles[i]
             if turtle.xcor() < 240:
-                turtle.fd(random.randint(5, 13))
+                turtle.fd(random.randint(2, 10))
             else:
                 winner = turtle.pencolor()
                 is_racing = False
     return winner
 
 
-# Judgeents
+# Judgements
 def judgment(input_color, winner,umpaier):
     desision = winner
     if desision == input_color:
