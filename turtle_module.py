@@ -16,37 +16,37 @@ def main():
     turtle.colormode(255)
 
 
-    # # drawing cw_squire by timy
-    # draw_squire_cw(timy_the_turtle)
-    # timy_the_turtle.clear()
-    #
-    # # drawing ccw_squire by timy
-    # draw_squire_ccw(timy_the_turtle)
-    # timy_the_turtle.clear()
-    #
-    # # Drawing a dashed line of any length
-    # draw_dash_line(timy_the_turtle, length=200, dash_size=4, gap_size=4)
-    # timy_the_turtle.clear()
-    #
-    # # drawing a polygon by the turtle
-    # timy_the_turtle.penup()
-    # timy_the_turtle.home()
-    # draw_polygon(timy_the_turtle, sides=6, size=50, colour="green")
-    # timy_the_turtle.clear()
-    #
-    # # Drawing a multi polygon with different size
-    # timy_the_turtle.penup()
-    # timy_the_turtle.home()
-    # draw_multi_polygon(timy_the_turtle, size=100, polygon_num=10)
-    # timy_the_turtle.clear()
+    # drawing cw_squire by timy
+    draw_squire_cw(timy_the_turtle)
+    timy_the_turtle.clear()
 
-    # # Random walk by a turtle
-    # random_walk(timy_the_turtle, pensize=10, times=200, speed="fastest")
-    # timy_the_turtle.clear()
+    # drawing ccw_squire by timy
+    draw_squire_ccw(timy_the_turtle)
+    timy_the_turtle.clear()
 
-    # # Drawing spirograph
-    # draw_spirograph(turtle, radius=100, size_gap=10, speed="fastest", pensize=2)
-    # timy_the_turtle.clear()
+    # Drawing a dashed line of any length
+    draw_dash_line(timy_the_turtle, length=200, dash_size=4, gap_size=4)
+    timy_the_turtle.clear()
+
+    # drawing a polygon by the turtle
+    timy_the_turtle.penup()
+    timy_the_turtle.home()
+    draw_polygon(timy_the_turtle, sides=6, size=50, colour="green")
+    timy_the_turtle.clear()
+
+    # Drawing a multi polygon with different size
+    timy_the_turtle.penup()
+    timy_the_turtle.home()
+    draw_multi_polygon(timy_the_turtle, size=100, polygon_num=10)
+    timy_the_turtle.clear()
+
+    # Random walk by a turtle
+    random_walk(timy_the_turtle, pensize=10, times=200, speed="fastest")
+    timy_the_turtle.clear()
+
+    # Drawing spirograph
+    draw_spirograph(turtle, radius=100, size_gap=10, speed="fastest", pensize=2)
+    timy_the_turtle.clear()
 
     # Drawing Hirst painting
     draw_hirst_painting(timy_the_turtle, size=10)
@@ -139,9 +139,6 @@ def rand_hist_color():
 (176, 192, 208), (168, 99, 102)]
     rand_hist_color_filter = random.choice(hist_colors_filter)
     return rand_hist_color_filter
-
-
-
 
 
 # multiple random colors

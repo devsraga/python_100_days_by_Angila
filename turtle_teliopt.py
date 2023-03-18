@@ -16,11 +16,11 @@ def main():
 
 def go_straight():
 
-    timy.fd(30)
+    timy.fd(15)
 
 
 def go_back():
-    timy.back(30)
+    timy.back(15)
 
 
 def turn_left():
