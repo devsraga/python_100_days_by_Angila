@@ -38,9 +38,6 @@ def clear():
     timy.pendown()
 
 
-
-
-
 if __name__ == "__main__":
     timy = Turtle()
     timy.shape("turtle")
