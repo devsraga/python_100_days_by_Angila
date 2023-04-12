@@ -86,15 +86,16 @@ font_dict_legend = {
 
 
 # Ploting....
-def plot(y, x=None, title=None, subtitle=None, xlabel=None, ylabel=None, legends=None, xlim=None, ylim=None, leg_loc= "upper left", ls=None, lw=None, c=None, marker=None):
+def plot(y, x=None, title=None, subtitle=None, xlabel=None, ylabel=None, legends=None, xlim=None, ylim=None, leg_loc= "upper left", ls=None, lw=None, c=None, marker=None, mec=None, mfc=None, ms=None):
     # Note:   the 'DejaVu Sans' is the default font family, defalt font size for python is 10
     font_family = [None, "Helvetica", "Times New Roman", "Comic Sans MS", "Arial", "Calibri", "DejaVu Sans"]
+
     if x is None:
-        plt.plot(y, label=legends, ls=ls, lw=lw, c=c, marker=marker)
+        plt.plot(y, label=legends, ls=ls, lw=lw, c=c, marker=marker, mec=mec, mfc=mfc, ms=ms)
     else:
-        plt.plot(x, y, label=legends, ls=ls, lw=lw, c=c, marker=marker)
+        plt.plot(x, y, label=legends, ls=ls, lw=lw, c=c, marker=marker, mec=mec, mfc=mfc, ms=ms)
     plt.suptitle(subtitle, ha='center', fontsize=12, weight='extra bold', family=font_family[-1])
-    plt.title(title, ha='center', fontsize=12, weight='normal', family="Helvetica")
+    plt.title(title, ha='center', fontsize=12, weight='normal', family=font_family[-1])
     plt.xlabel(xlabel, family=font_family[-1], fontsize=10, weight='normal')
     plt.ylabel(ylabel, family=font_family[-1], fontsize=10, weight='normal')
     plt.legend(loc=leg_loc, framealpha= 1, facecolor="White", edgecolor="black", fancybox=True, shadow=False, prop={'family':font_family[-1], 'stretch': 'normal', "weight":"normal", "size": 10})
