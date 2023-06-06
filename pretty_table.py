@@ -6,7 +6,7 @@ import sqlite3
 # cursor.execute("SELECT field1, field2, field3 FROM my_table")
 # my_db_table = from_db_cursor(cursor)
 
-
+# Hi dev___
 
 
 with open("addresses.csv") as fp:
