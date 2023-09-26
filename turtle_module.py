@@ -48,7 +48,6 @@ def main():
     draw_spirograph(turtle, radius=100, size_gap=10, speed="fastest", pensize=2)
     timy_the_turtle.clear()
 
-
     # Drawing Hirst painting
     draw_hirst_painting(timy_the_turtle, size=10)
     timy_the_turtle.clear()
