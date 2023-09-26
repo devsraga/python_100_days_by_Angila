@@ -27,7 +27,6 @@ def main():
             choice_to_play = False
             bye_msg(umpaier)
             umpaier.bye()
-
     screen.exitonclick()
 
 
